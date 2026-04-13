@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Boutique en ligne</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f7f7f7;
+      color: #111;
+    }
+
+    header {
+      background: black;
+      color: white;
+      padding: 15px;
+      text-align: center;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      background: #222;
+      padding: 10px;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 50px 20px;
+      background: white;
+    }
+
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 15px;
+      padding: 20px;
+    }
+
+    .product {
+      background: white;
+      padding: 15px;
+      border-radius: 10px;
+      text-align: center;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .product button {
+      margin-top: 10px;
+      padding: 10px;
+      background: black;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #111;
+      color: white;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Ma Boutique en Ligne</h1>
+</header>
+
+<nav>
+  <a href="#">Accueil</a>
+  <a href="#shop">Boutique</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<section class="hero">
+  <h2>Produits de qualité à petit prix</h2>
+  <p>Parfum • Sacs • Chaussures • Vêtements • Cuisine</p>
+</section>
+
+<section id="shop" class="products">
+
+  <div class="product">
+    <h3>Parfum Luxe</h3>
+    <p>15 000 FCFA</p>
+    <button>Acheter</button>
+  </div>
+
+  <div class="product">
+    <h3>Sac Fashion</h3>
+    <p>12 000 FCFA</p>
+    <button>Acheter</button>
+  </div>
+
+  <div class="product">
+    <h3>Chaussures</h3>
+    <p>20 000 FCFA</p>
+    <button>Acheter</button>
+  </div>
+
+  <div class="product">
+    <h3>Ustensiles Cuisine</h3>
+    <p>8 000 FCFA</p>
+    <button>Acheter</button>
+  </div>
+
+</section>
+
+<footer id="contact">
+  <p>Contact : WhatsApp +229 XX XX XX XX</p>
+</footer>
+
+</body>
+</html>
